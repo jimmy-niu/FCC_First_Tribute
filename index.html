@@ -1,10 +1,133 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title> Bon Iver </title>
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Great Vibes">
+
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+		<link rel="icon" href="images/icon.png">
+
+		<script type="text/javascript" src="jquery-3.2.1.js"> </script>
+
+		<script defer>	
+			$(document).ready(function() {
+				buttonWidth = $("#spotify-button").width();
+				width = $("#button-span").parent().width();
+				$("#button-span").css("margin-left", (width / 2 ) - (buttonWidth/2));
+
+				albumWidth = $("#22Mil").width();
+				$(".overlay").css("width", albumWidth);
+
+				albumPos = $("#22Mil").position();
+				$(".overlay").css("left", albumPos.left);
+			});
+
+			$(window).resize(function() {
+			  	buttonWidth = $("#spotify-button").width();
+				width = $("#button-span").parent().width();
+				$("#button-span").css("margin-left", (width / 2 ) - (buttonWidth/2));
+
+				albumWidth = $("#22Mil").width();
+				$(".overlay").css("width", albumWidth);
+
+				albumPos = $("#22Mil").position();
+				$(".overlay").css("left", albumPos.left);
+			});
+
+		</script>
 	</head>
 
+	<div class = "container-fluid">
 	<body>
+			<div class = "row">
+				<div class = "box-1 col-xs-6 container">
+					<img class = "img-responsive child" src="https://i.imgur.com/7EBEXao.png">
+					<h1 style = "text-align: center;"> Bon Iver </h1>
+				</div>
 
+				<div class = "right-side col-xs-6 container"> 
+					<h2 style = "margin-left: -5%;"> Blurb: </h2>
+					<p> Bon Iver is an American indie folk band founded in 2006 by singer-songwriter Justin Vernon. The name "Bon Iver" derives from the French phrase bon hiver ("good winter"). They make some kickass music.</p>
+					<span id = "button-span" style = "margin-left: 32%;"> 
+					<a href = "https://open.spotify.com/artist/4LEiUm1SRbFMgfqnQTwUbQ">
+
+						<button id = "spotify-button" class = "btn drop-shadow text" style = "background-color: #84bd00; white-space: normal;"> 
+							
+						<i class="fa fa-spotify" aria-hidden="true"></i> Check them out on Spotify!
+						
+						</button> 
+					</a>
+					</span>
+					
+					<h2 style = "margin-left: -5%;"> Albums: </h2>
+					<div class = "album-art container">
+						<div class = "row">
+							<div class = "indiv_album">
+								
+								<a class = "link-color col-xs-4" id = "forem" href = "https://en.wikipedia.org/wiki/For_Emma,_Forever_Ago">
+								
+									<img class = "img-responsive"  src = "images/ForEmma.jpg" alt = "For Emma, Forever Ago Album Art">
+									
+									<div class = "overlay text" style = "font-size: 1vw;">
+									<span class = "center_all"> <em> For Emma, Forever Ago </em> </span>
+									</div>
+								
+								</a>
+							</div>
+
+							<div class = "indiv_album">
+								
+								<a class = "link-color col-xs-4" href = "https://en.wikipedia.org/wiki/Bon_Iver_(album)"><img id = bonIv class = "img-responsive" src = "images/BonIverBonIver.jpg"> 
+									
+									<div class = "overlay text" style = "font-size: 1vw;">
+									<span class = "center_all"> <em> Bon Iver, Bon Iver </em> </span>
+									</div>
+								
+								</a>
+							</div>
+
+							<div class = "indiv_album">
+								
+								<a class = "link-color col-xs-4" href = "https://en.wikipedia.org/wiki/22,_A_Million"><img class = "img-responsive"  id = "22Mil" src = "images/22Million.jpg">
+									
+									<div class = "overlay text" style = "font-size: 1.2vw;">
+									<span class = "center_all"> <em> 22, A Million </em> </span>
+									</div>
+								
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+					<h2 style = "font-size: calc(12px + 0.75vw); text-align: center;"> <em> Click on each to find out more! </em> </h2>
+					<br>
+					<p style = "text-indent: 24px;"> This was written as a first "tribute page" for FreeCodeCamp. The overarching goal was to make a decent-looking, scaling webpage in my first foray into front end dev. The smaller goals were to mess around with jQuery, use some Bootstrap, and hack together some CSS. </p>
+
+					<h2> <em> Signing Off, </em> </h2>
+					<span class = "signature" style = "padding-left: 10%;"> <a style = "color: white;"href = "http://www.jimmyniu.com"> Jimmy Niu </a></span> 
+					</span>
+
+					
+						
+					<br>
+					
+
+				</div>
+			</div>
+
+		</div>
 	</body>
+	</div>
 
 </html>

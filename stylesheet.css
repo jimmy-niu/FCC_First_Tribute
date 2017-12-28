@@ -1,0 +1,100 @@
+body{
+  background-color: #4ABDAC;
+  margin: 5% 10% 1% 10%;
+  height: 100%;
+  
+}
+
+h1{
+	font-size: 8vw;
+	font-family: 'Vollkorn', Monospace;
+	color: white;
+}
+
+h2{
+	font-size: calc(12px + 1vw);
+	font-family: 'Vollkorn', Monospace;
+	color: white;
+}
+.box-1{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  	height: 100%;
+  	width: 50%;
+}
+
+img{
+	box-shadow: 0 10px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.child{
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+
+.right-side{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	padding: 1% 5% 1% 5%;
+	margin-left: 3%;
+	width: 47%;
+	height: 10050%;
+	background-color: rgba(252,74,26,0.8);
+
+	font-size: calc(12px + 0.25vw);
+	font-family: 'Open Sans', Monospace;
+  	color: white;
+
+}
+
+.album-art{
+	margin-left: -2.5%;
+	width: 105%;
+}
+
+.indiv-album{
+	margin: 15% 0% 15% 0%;
+	width: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7.5%;
+  right: 0;
+  height: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.indiv_album:hover .overlay{
+	opacity: 0.8;
+}
+
+.center_all{
+	position: relative;
+	top: 35%;
+}
+.text{
+	font-size: calc(12px + 0.15vw);
+	font-family: 'Open Sans', Monospace;
+  	color: white;
+}
+.drop-shadow{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.signature{
+	font-size: calc(12px + 1.3vw);
+	font-family: 'Great Vibes', Monospace;
+  	color: white;
+}
