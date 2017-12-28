@@ -1,0 +1,15 @@
+General Info:
+    The most used javascript 'tool'
+    As it is javascript, needs to be within the <script> tags.
+
+Setup:
+    Gotta include this:
+    $(document).ready(function() {
+        // Have shit in here?
+    });
+
+General Usage:
+    use a $ to start each line, end with ;
+    $ is called bling.
+    A general line appears to be: $("the thing here").someFunction("");
+        - "the thing here" can be a whole type, ie p or button, a class ie .well, or #some-id

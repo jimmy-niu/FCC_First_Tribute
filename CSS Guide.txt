@@ -1,0 +1,42 @@
+CSS 101:
+
+There are three main ways to introduce CSS, on the top of your html as inclusions between style brackets
+or as an external css stylesheet. All of this is done within the <head> brackets.
+
+Internal:
+    <style>
+        p{
+            attributes here.
+        }
+
+        .a_css_class{
+            attributes here.
+            Within any element, you can say class = "a css class" and get all these attributes
+            IE: <p class = "a css class">
+        }
+
+        #duck{
+            adds attributes to the element with the id "duck" (these should be unique and assigned when
+            creating the element)
+        }
+    </style>
+
+External:
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    The code within the external style sheet is the same.
+
+
+Bootstrap: (this is a dynamic stylesheet, which means it will play nicely with mobile and different
+screen sizes)
+
+    just include this: <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+    The Bootstrap includes nice css classes:
+        container-fluid (which autosizes the div)
+        img-responsive (which resizes the img)
+        And tons more, including buttons, etc.
+
+Useful things:
+    Font Awesome: which has tons of free svg's. Simply include the link and then use <i class = "">
+        to make an icon.
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
